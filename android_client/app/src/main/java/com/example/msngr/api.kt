@@ -15,3 +15,7 @@ interface ClientService {
     @Receive
     fun observeWebSocketEvent(): Flowable<WebSocket.Event>
 }
+
+open class Request(val Type: String) {}
+
+class TestRequest(Type: String, val TestRequestData: String) : Request(Type) {}

@@ -18,6 +18,7 @@ import (
 )
 
 var funcs = map[string]func(map[string]interface{}) bool{
+	"testRequest":     testRequest,
 	"addNewClient":    addNewClient,
 	"sendMessage":     sendMessage,
 	"registerClient":  registerClient,
@@ -101,6 +102,11 @@ func pingClient(c *websocket.Conn) {
 			time.Sleep(serverapi.PingPeriod / 2)
 		}
 	}
+}
+
+func testRequest(params map[string]interface{}) bool {
+	log.Println(params["testRequestData"])
+	return true
 }
 
 func registerClient(params map[string]interface{}) bool {

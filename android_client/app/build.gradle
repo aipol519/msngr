@@ -41,6 +41,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
     // Scarlet
     implementation 'com.tinder.scarlet:scarlet:0.1.11'
     implementation 'com.tinder.scarlet:websocket-okhttp:0.1.11'
