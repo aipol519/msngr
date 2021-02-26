@@ -44,6 +44,9 @@ dependencies {
     // GSON
     implementation 'com.google.code.gson:gson:2.8.6'
 
+    // Moshi
+    implementation 'com.squareup.moshi:moshi-kotlin:1.11.0'
+
     // Scarlet
     implementation 'com.tinder.scarlet:scarlet:0.1.11'
     implementation 'com.tinder.scarlet:websocket-okhttp:0.1.11'
